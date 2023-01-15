@@ -1,0 +1,51 @@
+h1 {
+        border-bottom: 1px black solid;
+        padding-bottom: 10px;
+}
+
+.ident {
+    position: relative;
+    left: 30px;
+}
+
+#underline {
+    text-decoration: underline;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+
+#red {
+    text-align: center;
+    color:red;
+    border: 1px solid red;
+}
+
+.padit {
+    padding: 0 60px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+table,th, td {
+    border: 1px solid black;
+}
+
+table {
+    margin: 0 auto 30px auto;
+}
+
+td {
+    padding: 20px 0;
+}

@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+nav {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+.header {
+    background-image: url('images/hdr_background.jpg');
+    background-size: cover;
+    padding: 150px 0;
+}
+
+li {
+    display: block;
+}
+
+#navbutton {
+position: absolute;
+right: 200px;
+top: 15px;
+background-color:#4884ED;
+color: white;
+padding: 5px 10px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    font-size: 44px;
+}
+
+form {
+    margin: 0 auto;
+    width: 400px;
+}
+
+#email {
+    width: 300px;
+    font-size: 20px;
+}
+
+.button {
+    background-color:#4884ED;
+    color: white;
+    padding: 5px 10px; 
+    border: 1px solid #4884ED;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.benefits {
+    padding: 50px 100px;
+}
+
+.boxes {
+    float:left;
+    text-align: center;
+    width: 33%;
+}
+
+i {
+color: #4884ED;
+}
