@@ -1,13 +1,37 @@
+.navbar {
+    display: flex;
+    flex-direction: row; 
+    background-color: #000;
+}
+
+nav {
+    width: 85%;
+}
+
+footer nav {
+    width: 100%;
+}
+
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #000;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    width: 100%;
 }
 
-.nav li {
-    float: left;
+.nav.bottom {
+    justify-content: center;
+}
+
+.navbar img {
+    height: 35px;    
+    padding-top: 5px;
+    padding-left: 20px;
   }
 
   .nav li a{
@@ -22,7 +46,20 @@
 .main {
     background-image: url("images/avengers.jpg");
     background-size: cover;
+    padding: 100px 0px 100px 50px;
 }
+
+.main p {
+    width: 600px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Eczar', serif;
+    color:palegreen;
+}
+
 h1 {
-    font-size: 44px;
+    font-size: 72px;
+    font-weight: 900;
+    font-family: 'DM Sans', sans-serif;
+    color: cornsilk;
 }
