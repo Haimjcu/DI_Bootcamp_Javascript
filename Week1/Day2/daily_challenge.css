@@ -1,0 +1,103 @@
+.navbar {
+    display: flex;
+    flex-direction: row; 
+    background-color: #000;
+    color:white;
+}
+
+nav {
+    width: 85%;
+}
+
+footer nav {
+    width: 100%;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav.bottom {
+    justify-content: center;
+}
+
+.navbar img {
+    height: 35px;    
+    padding-top: 5px;
+    padding-left: 20px;
+  }
+
+  .nav li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main {
+    background-image: url("images/avengers.jpg");
+    background-size: cover;
+    padding: 100px 0px 100px 50px;
+}
+
+.main p {
+    width: 600px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Eczar', serif;
+    color:palegreen;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'DM Sans', sans-serif;
+    color: cornsilk;
+    float: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        background-color: red;
+    }
+    .nav li a{
+        color:white;
+    }
+   }
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: lightgreen;
+    }
+    .nav li a{
+        color:black;
+    }
+   }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    .navbar {
+        background-color: yellow;
+    }
+   }
+
+   @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 72px;
+        float: none;
+    }
+
+   }
