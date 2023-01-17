@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1000px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border: 1px solid black;
+}
+
+.main {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.vert {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.horiz {
+    display:flex;
+    justify-content: space-evenly;
+    gap: 60px;
+}
