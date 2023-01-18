@@ -1,0 +1,17 @@
+.topsection {
+    background-image: url('images/student.jpg');
+    background-size: cover;
+    padding-bottom: 20vh;
+}
+
+.btn-outline-primary {
+    border-color: white;
+}
+
+.bottomsection {
+    text-decoration: none;
+}
+
+h2, i {
+    color: #0d6efd;
+}
