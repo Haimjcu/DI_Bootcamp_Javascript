@@ -1,33 +1,15 @@
 //one loop
 for (let i=1; i<7; i++) {
-    switch (i) {
-        case 1:
-            console.log("*");
-            continue;
-        case 2:
-            console.log("**");
-            continue;
-        case 3:
-            console.log("***");
-            continue;
-        case 4:
-            console.log("****");
-            continue;
-        case 5:
-            console.log("*****");
-            continue;
-        case 6:
-            console.log("******");
-            continue;
-    }
+    console.log("*".repeat(i));
 }
 
 
 //nested loop
-const asterik="*";
+let asterik="";
 for (let i=1; i<7; i++) {
+    asterik="";
     for (let x=0; x<i; x++) {
-        console.log(asterik);
+        asterik+="*";
     }
-    console.log("\n");
+    console.log(asterik);
 }
