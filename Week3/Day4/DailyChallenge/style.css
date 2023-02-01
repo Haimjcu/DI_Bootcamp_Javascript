@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.15em;
+}
+
+#container {
+    background-color: orangered;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 2em;
+    padding: 30px 0;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+}
+
+button {
+    margin-left: -10px;
+    background-color: white;
+    color: blue;
+    font-weight: 500;
+}
+
+.listTasks {
+    display:none;
+    background-color: white;
+    width: 500px;
+    margin: 30px auto;
+    border: none;
+    text-align: left;
+    padding: 20px;    
+}
+
+.tasks {
+    background-color: white;
+    float: left;
+}
+
+.fa-xmark {
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+}
+
+#clearbtn {
+    color:orangered;
+}
