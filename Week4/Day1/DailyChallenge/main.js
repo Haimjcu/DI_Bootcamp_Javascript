@@ -37,3 +37,9 @@ gameInfo.forEach((obj, i) => {
 });
 
 console.log(winners);
+
+let total=0;
+gameInfo.forEach((obj, i) => {
+  total+=parseInt(obj["score"]);
+});
+console.log(total);
