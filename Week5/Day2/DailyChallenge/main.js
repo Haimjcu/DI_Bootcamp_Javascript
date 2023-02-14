@@ -1,7 +1,9 @@
 let xhr = new XMLHttpRequest();
-const body = document.getElementsByTagName("body")[0];
+const results = document.getElementsByClassName("results")[0];
 const searchBtn = document.getElementById("searchBtn");
 searchBtn.addEventListener("click", makeRequest);
+const deleteAllBtn = document.getElementById("deleteAll");
+deleteAllBtn.addEventListener("click", onDeleteAllBtnClick);
 
 
 function makeRequest (event) {
@@ -45,8 +47,23 @@ function displayGifs(data) {
   gif.classList.add("gifs");
   const gifImg = document.createElement("img");
   gifImg.setAttribute("src",imgUrl);
+  const deleteBtn = document.createElement('button');
+  deleteBtn.innerHTML="Delete";
+  deleteBtn.addEventListener('click',onClickDelete);
   gif.appendChild(gifImg);
-  body.appendChild(gif);
+  gif.appendChild(deleteBtn);
+  results.appendChild(gif);
+}
+
+function onClickDelete(evt) {
+  let div;
+  div = evt.target.parentElement;
+  div.parentElement.removeChild(div);
+}
+
+function onDeleteAllBtnClick() {
+  const divs = document.querySelectorAll('gifs');
+  divs.forEach( elem => elem.parentElement.removeChild(elem));
 }
  
 
