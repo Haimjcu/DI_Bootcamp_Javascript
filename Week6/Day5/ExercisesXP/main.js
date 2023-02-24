@@ -11,6 +11,9 @@ const container = document.getElementsByClassName("container")[0];
         const pdesc = document.createElement("p");
         const pstart = document.createElement("p");
         const pdays = document.createElement("p");
+        const pcheck = document.createElement("p");
+        const bx = document.createElement("button")
+        const bedit = document.createElement("button")
         div.classList.add("task");
         pdesc.classList.add("description");
         pname.addEventListener("click", (event) =>{
@@ -23,13 +26,17 @@ const container = document.getElementsByClassName("container")[0];
         const tdesc = document.createTextNode(description);
         const tstart = document.createTextNode(startdate);
         const tdays = document.createTextNode(`Days left: ${daysLeft}`);
+        pcheck.innerHTML=`<input type="checkbox" name="" id=""></input>`;
+        bx.innerHTML=`X`;
+        bedit.innerHTML=`Edit`;
+
 
         pname.appendChild(tname);
         pdesc.appendChild(tdesc);
         pstart.appendChild(tstart);
         pdays.appendChild(tdays);
 
-        div.append(pname, pdesc, pstart,pdays);
+        div.append(pname, pdesc, pstart,pdays, pcheck, bx, bedit);
         container.appendChild(div);
     })
 })()
