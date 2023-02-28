@@ -1,5 +1,6 @@
 const exp = require('express');
 const app = exp();
+app.use('/',exp.static(__dirname+'/public'));
 
 app.get('/', (req,res) => {
     res.send(`<h1>This is my first repsonse</h1>
@@ -8,16 +9,15 @@ app.get('/', (req,res) => {
 });
 
 app.get('/pic', (req,res) => {
-    res.send('heeoo');
-    app.use('/pic',exp.static('index.html'));
+    res.sendFile(__dirname+'/pic/index.html');
 });
 
 app.get('/form', (req,res) => {
-    app.use('/',exp.static(__dirname+'/piv'));
+    res.sendFile(__dirname+'/public/index.html');
 });
 
 app.get('/formData', (req,res) => {
-    app.use('/',exp.static(__dirname+'/piv'));
+    res.send(`<p>${req.query.email} sent you a message ${req.query.message}</p>`);
 });
 
 app.get('/aboutMe/:hobby', (req,res) => {
