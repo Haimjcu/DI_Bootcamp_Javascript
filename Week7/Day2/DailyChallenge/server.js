@@ -9,7 +9,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/pic', (req,res) => {
-    res.sendFile(__dirname+'/pic/index.html');
+    res.sendFile(__dirname+'/pic.html');
 });
 
 app.get('/form', (req,res) => {
