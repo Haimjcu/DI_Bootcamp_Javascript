@@ -1,11 +1,9 @@
 import './App.css';
-import DemoCarousel from './Carousel';
+import Step from './Components/Step'
 
 function App() {
   return (
-    <>
-      <DemoCarousel />
-    </>
+    <Step />
   );
 }
 
