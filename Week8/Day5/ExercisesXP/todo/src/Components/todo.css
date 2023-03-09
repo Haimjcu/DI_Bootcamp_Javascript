@@ -1,0 +1,4 @@
+.listItem:hover {
+    cursor:pointer;
+    text-decoration: line-through;
+}
