@@ -20,10 +20,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav d-flex">
-            <a class="nav-link" href="#">About</a>
-            <a class="nav-link" href="#">Porfolio</a>
-            <a class="nav-link" href="#">Blog</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about_ref">About</a>
+            <a class="nav-link" href="#portfolio_ref">Porfolio</a>
+            <a class="nav-link" href="#team_ref">Team</a>
+            <a class="nav-link" href="#contact_ref">Contact</a>
             </div>
         </div>
         </div>
@@ -32,68 +32,75 @@
     <header>
         <div id="overlay">
             <h1>Haim Lubin</h1>
+            <p>I'm a hands on CTO | Full Stack Developer with over 25 years of technology experience. Building the systems infrastructure to be competitive in the global cannabis economy. Providing technological leadership and expertise in systems architecture, team building, project management, offshore contractor sourcing and management, and best practices. My broad development background allows me to do many of the technical tasks myself, quickly implementing business strategy while saving on the costs of hiring expensive contractors. Delivering what the business needs, when it needs it, and under budget so the rest of the team can concentrate on what they do best.</p>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about_ref">
         <h2>About Me</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 leftside">
-                    <img class="rounded-pill" src="images/face1.jpg" alt="">
+                    <img class="rounded-pill" src="images/Haim_Lubin.jpg" alt="">
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <h3>Haim Lubin</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, minus magnam, nulla excepturi temporibus exercitationem doloremque repellat natus totam quia rem voluptatibus beatae ex accusantium facilis tempora deleniti ab tenetur.</p>
+                    <p>I've built by career in a variety of roles and industries, from large global companies to small high powered operations where I've led initiatives in all aspects of the business. I love creating and growing the systems that support the business objectives, being close to the business stakeholders, and turning the strategic objectives into first class systems. I’m not only used to wearing many hats, I sincerely enjoy it; I thrive in an environment where no two work days are exactly the same.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="portfolios">
+    <section class="portfolios" id="portfolio_ref">
         <h2>Portfolio</h2>
-        <div class="portfolios_box">
+        <div class="portfolios_wrapper">
             <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port1.png" alt=""></a>
+                <h3>JustConnectUs</h3>
+                <a href="https://www.justconnectus.com/" target="_blank"><img src="images/justconnectus.png" alt=""></a>
+                <p>Just Connect Us is a community referral app that connects locals with trusted service providers who are vetted by someone who knows and understands them. Through private messages, locals can now get honest opinions about service providers without wasting time searching online. And service providers can now generate a steady stream of referrals from happy locals, without marketing themselves online.</p>
             </div>
             <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port3.png" alt=""></a>
+                <h3>ShoshanaJenn</h3>
+                <a href="https://www.shoshanajenn.com/" target="_blank"><img src="images/shoshanajenn.PNG" alt=""></a>
+                <p>The place to get Wooly, hand-made, bags, soap dishes, and natural products</p>
             </div>
             <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port6.png" alt=""></a>
-            </div>
-            <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port7.png" alt=""></a>
-            </div>
-            <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port8.png" alt=""></a>
-            </div>
-            <div class="portfolio">
-                <a href="#"><img src="images/portfolio/port11.png" alt=""></a>
+                <h3>MedicalMarijuana411</h3>
+                <a href="https://medicalmarijuana411.com/" target="_blank"><img src="images/mm411.PNG" alt=""></a>
+                <p>Founded in 2009, MM411 provides unbiased, research-based cannabis training courses created by experts in each field. With offices in Japan, Europe, Spain, Mexico, and South Africa, MM411 collaborates with experts across the globe to create accessible, tailored cannabis education courses for a plethora of topics.</p>
             </div>
         </div>
     </section>
-    <section class="blog">
-        <h2>Blog</h2>
+    <section class="team_section" id="team_ref">
+        <h2>Team</h2>
+        <div class="team_wrapper">
+            <div class="team">
+                <h3>CEO</h3>
+                <img src="images/Haim_Lubin.jpg" alt="">
+            </div>
+            <div class="team">
+                <h3>Developer Support</h3>
+                <img src="images/security.jpg" alt="" id="tiko">
+            </div>
+            <div class="team">
+                <h3>The Horse & Plow</h3>
+                <img src="images/horsenplow.jpg" alt="">
+            </div>
+            <div class="team">
+                <h3>Deep Thought Machine</h3>
+                <img src="images/swing.jpg" alt="">
+            </div>
+        </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact_ref">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 leftside">
                     <h2>Get in Touch</h2>
                 </div>
                 <div class="col-md-8 col-sm-12">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" id="name" class="form-control" placeholder="Your Name">
-                          </div>
-                        <div class="mb-3">
-                          <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="mb-3">
-                            <input type="textarea" class="form-control-lg" id="message">
-                          </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </form>
+                    <h3>Please send an email to:</h3>
+                    <h2 id="email">cory.lubin@gmail.com</h2>
+                    <h3>This way I'll know you are a real person and not a bot :)</h3>
                 </div>
         </div>
     </section>

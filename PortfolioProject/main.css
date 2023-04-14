@@ -9,12 +9,12 @@
 
 html,h1,h2,h3,h4,h5,h6,a{
     font-family: "Raleway";
-    color: #4884ED;
+    color: #2553f0;
     font-weight: 700;
 }
 
 .navbar {
-    background-color: #26B69F;
+    background-color: #00c6cd;
 }
 
 .nav-link {
@@ -22,7 +22,7 @@ html,h1,h2,h3,h4,h5,h6,a{
 }
 
 header {
-    background-image: url('images/headerback.jpg');
+    background-image: url('images/batayin.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -30,45 +30,126 @@ header {
 }
 
 #overlay {
-    padding-top: 45vh;
-    padding-left: 30vw;
+    padding-top: 20vh;
+    padding-left: 10vw;
+    width: 50%;
+}
+
+#overlay p{
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
 }
 
 section {
-    background-color: #efefef;
+    padding-top: 30px;
 }
 
-h2 {
+.about, .team_section {
+    background-color: #efefef;
+    padding-bottom: 30px;
+}
+
+h2, h3 {
     padding-top: 2%;
     padding-bottom: 1%;
     text-align: center;
 }
 
 .leftside {
-    border-right: 5px solid #4884ED;
+    border-right: 5px solid #2553f0;
 }
 
 .leftside img {
     float: right;
+    width: 200px;
 }
 
-.portfolios {
-    padding: 0 10vw;
+#email{
+    font-style: italic;
+    color: #1f2545;
 }
 
-.portfolios_box {
+.team_wrapper {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3vh;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.team img {
+    height: 225px;
+}
+
+.team h3 {
+    color: #00c6cd;
+}
+
+.contact {
+    margin-bottom: 10vh;
+}
+
+.portfolios_wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .portfolio {
-    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
 }
 
 .portfolio img {
-    overflow: hidden;
-    width: 300px;
-    height: 300px;
+    width: 400px;
 }
+
+.portfolio a {
+    margin: 0 auto;
+}
+
+.portfolio h3 {
+    color: #00c6cd;
+}
+
+#tiko {
+    width: 170px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    #overlay {
+        padding-top: 5vh;
+        padding-left: 5vw;
+        width: 90%;
+    }
+
+    .leftside {
+        border-right: none;
+        text-align: center;
+    }
+    .leftside img {
+        float: unset;
+    }
+
+    .portfolio, .team {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .team img {
+        height: unset;
+    }
+    #tiko {
+        width: unset;
+        margin: unset;
+    }
+  }
